@@ -1,0 +1,254 @@
+:root {
+  --Very-dark-gray-blue: hsla(237, 18%, 21%, 0.808);
+  --Very-dark-grayish-blue: hsla(206, 13%, 34%, 0.808);
+  --Very-dark-desaturated-blue: hsl(237, 23%, 32%);
+  --Very-light-red: hsl(13, 100%, 72%);
+  --light-red: hsl(353, 100%, 62%);
+  --footer-background: hsl(240, 10%, 16%);
+  --footer-text: hsl(240, 2%, 79%);
+  --CTA-text: hsl(356, 100%, 66%);
+  --CTA-hover-background: hsl(355, 100%, 74%);
+  --heading: hsl(208, 49%, 24%);
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: "Ubuntu", sans-serif;
+}
+#topSection {
+  font-family: "Overpass", sans-serif;
+  background-image: linear-gradient(
+      hsla(13, 100%, 72%, 0.801),
+      hsla(353, 100%, 62%, 0.808)
+    ),
+    url("images/bg-pattern-intro.svg");
+  background-position: center;
+  overflow: hidden;
+  border-radius: 0% 0% 0% 17% / 10% 10% 10% 32%;
+}
+.navbar-light .navbar-brand {
+  color: white;
+  font-size: 2em;
+  font-weight: 600;
+}
+.navbar-light .navbar-brand:hover {
+  color: white;
+  font-size: 2em;
+  text-decoration: none;
+}
+.navbar-light .navbar-nav .nav-link {
+  color: white;
+}
+
+div nav a:hover {
+  color: white;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+li a.dropdown-item:hover {
+  font-weight: bold;
+  background-color: white;
+}
+
+.btn-group-lg > .btn,
+.btn-lg {
+  display: inline-block;
+  text-align: center;
+  padding: 15px 30px;
+  color: hsl(208, 49%, 24%);
+  text-decoration: none;
+  border-radius: 35px;
+}
+
+.btn-group-lg > .btn,
+.btn-lg:hover {
+  display: inline-block;
+  text-align: center;
+  color: hsl(356, 100%, 66%);
+  background-color: white;
+  text-decoration: none;
+  border-radius: 35px;
+}
+
+#section1Text {
+  color: white;
+}
+#section1Text a {
+  color: rgba(255, 255, 255, 0.897);
+  border: 0.3px solid;
+  border-radius: 35px;
+  padding-left: -2px;
+}
+#section1Text a:hover {
+  color: hsl(356, 100%, 66%);
+  background-color: white;
+  text-decoration: none;
+  border-radius: 35px;
+}
+#customDrop-dark {
+  display: none;
+}
+
+img.svg {
+  transform: rotate(360deg);
+  position: absolute;
+  right: 5%;
+  top: 15px;
+}
+.mob {
+  display: none;
+}
+.active {
+  display: inline-block;
+  text-align: center;
+  color: hsl(356, 100%, 66%) !important ;
+  background-color: white;
+  text-decoration: none;
+  border-radius: 35px;
+}
+
+@media (max-width: 575.98px) {
+  .navbar-light .navbar-nav .nav-link {
+    text-align: center;
+    color: black;
+    font-weight: bold;
+  }
+
+  div ul.navbar-nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color: white;
+  }
+  #nav-login-btn {
+    border-top: 0.3px solid rlightgrey;
+    display: inline;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+  #customDrop-light {
+    display: none;
+  }
+  #customDrop-dark {
+    display: block;
+  }
+  #section2 {
+    margin-bottom: 150px;
+  }
+  img.svg {
+    position: absolute;
+    right: 40%;
+  }
+
+  .row-footer {
+    display: felx;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  h4.mt-2.h4-footer {
+    margin-top: 60px !important;
+  }
+  .h4-mt {
+    margin-top: 40px !important;
+  }
+  .footer-p-text {
+    text-align: center;
+    margin: 0 auto;
+    padding: 5px 0;
+  }
+  p.mt-5.footer-p-text {
+    margin-top: 25px !important;
+  }
+
+  #firstItems {
+    display: flex;
+    flex-direction: column;
+  }
+  img.img-fluid {
+    min-width: 500px;
+    min-height: 500px;
+  }
+
+  img.img-fluid.section3-parent-img {
+    position: absolute;
+    top: -95%;
+  }
+  .section-div-text {
+    text-align: center;
+  }
+  .desktop {
+    display: none;
+  }
+  .mob {
+    display: block;
+    margin-top: -100px;
+    margin-bottom: 50px;
+  }
+}
+
+img.svg.rotate {
+  transform: rotate(180deg);
+}
+/* Section 2 */
+
+#section2 {
+  padding: 90px;
+}
+#section2-h1 {
+  font-weight: 600;
+  color: var(--Very-dark-desaturated-blue);
+}
+#section2-h4 {
+  color: var(--Very-dark-desaturated-blue);
+}
+#section3-sizing {
+  background-image: linear-gradient(
+      var(--Very-dark-desaturated-blue),
+      var(--Very-dark-gray-blue)
+    ),
+    url("/images/bg-pattern-circles.svg");
+  border-radius: 0% 12% 0% 13% / 10% 18% 10% 16%;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 100px;
+}
+#section3 {
+  height: 65vh;
+  margin-bottom: 150px;
+}
+
+.section3-parent {
+  position: relative;
+  &-img {
+    position: absolute;
+    top: -19%;
+  }
+}
+.section-div-text {
+  display: block;
+  margin: auto auto;
+}
+#section4-text {
+  margin: auto auto;
+}
+footer {
+  background: hsl(240, 10%, 16%);
+  border-radius: 0% 11% 0% 13% / 10% 37% 10% 0%;
+  margin: 20px 0;
+  padding: 30px 0;
+}
+.footer-p-text {
+  color: lightgray;
+}
+#section2-text {
+  margin: auto auto;
+}
