@@ -169,26 +169,11 @@ img.svg {
     justify-content: center;
     align-items: center;
   }
-  h4.mt-2.h4-footer {
-    margin-top: 60px !important;
-  }
-  .h4-mt {
-    margin-top: 40px !important;
-  }
-  .footer-p-text {
-    text-align: center;
-    margin: 0 auto;
-    padding: 5px 0;
-  }
-  p.mt-5.footer-p-text {
-    margin-top: 25px !important;
-  }
   #firstItems {
     display: flex;
     flex-direction: column;
   }
   img.img-fluid {
-    min-width: 200px;
     min-height: 300px;
   }
   img.img-fluid.section3-parent-img {
@@ -203,8 +188,10 @@ img.svg {
   }
   .mob {
     display: block;
-    margin-top: -100px;
     margin-bottom: 50px;
+  }
+  h4.mt-2 {
+    margin-top: 30px !important;
   }
 }
 
@@ -214,7 +201,7 @@ img.svg.rotate {
 
 /* Section 2 */
 #section2 {
-  padding: 90px;
+  padding: 20px;
   overflow: hidden;
 }
 
