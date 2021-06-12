@@ -16,15 +16,15 @@
   margin: 0;
 }
 body {
-  font-family: "Ubuntu", sans-serif;
+  font-family: 'Ubuntu', sans-serif;
 }
 #topSection {
-  font-family: "Overpass", sans-serif;
+  font-family: 'Overpass', sans-serif;
   background-image: linear-gradient(
       hsla(13, 100%, 72%, 0.801),
       hsla(353, 100%, 62%, 0.808)
     ),
-    url("images/bg-pattern-intro.svg");
+    url('images/bg-pattern-intro.svg');
   background-position: center;
   overflow: hidden;
   border-radius: 0% 0% 0% 17% / 10% 10% 10% 32%;
@@ -58,7 +58,8 @@ li a.dropdown-item:hover {
 .btn-lg {
   display: inline-block;
   text-align: center;
-  padding: 15px 30px;
+  padding: 15px 20px;
+  width: 120px;
   color: hsl(208, 49%, 24%);
   text-decoration: none;
   border-radius: 35px;
@@ -73,7 +74,15 @@ li a.dropdown-item:hover {
   text-decoration: none;
   border-radius: 35px;
 }
-
+.btn.info {
+  display: inline-block;
+  text-align: center;
+  padding: 15px 20px;
+  width: 150px;
+  color: hsl(208, 49%, 24%);
+  text-decoration: none;
+  border-radius: 35px;
+}
 #section1Text {
   color: white;
 }
@@ -111,28 +120,13 @@ img.svg {
   border-radius: 35px;
 }
 
-@media (max-width: 575.98px) {
+@media screen and (max-width: 575.98px) {
   .navbar-light .navbar-nav .nav-link {
     text-align: center;
     color: black;
     font-weight: bold;
   }
 
-  div ul.navbar-nav {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    background-color: white;
-  }
-  #nav-login-btn {
-    border-top: 0.3px solid rlightgrey;
-    display: inline;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-  }
   #customDrop-light {
     display: none;
   }
@@ -168,18 +162,11 @@ img.svg {
     margin-top: 25px !important;
   }
 
-  #firstItems {
-    display: flex;
-    flex-direction: column;
-  }
-  img.img-fluid {
-    min-width: 500px;
-    min-height: 500px;
-  }
-
   img.img-fluid.section3-parent-img {
     position: absolute;
-    top: -95%;
+    top: -195% !important;
+    width: 400px;
+    text-align: center;
   }
   .section-div-text {
     text-align: center;
@@ -188,9 +175,15 @@ img.svg {
     display: none;
   }
   .mob {
-    display: block;
-    margin-top: -100px;
-    margin-bottom: 50px;
+    display: inline-block;
+    // width: 25%;
+  }
+  div ul.navbar-nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center !important;
+    text-align: center !important;
+    background-color: white !important;
   }
 }
 
@@ -214,7 +207,7 @@ img.svg.rotate {
       var(--Very-dark-desaturated-blue),
       var(--Very-dark-gray-blue)
     ),
-    url("/images/bg-pattern-circles.svg");
+    url('/images/bg-pattern-circles.svg');
   border-radius: 0% 12% 0% 13% / 10% 18% 10% 16%;
   background-position: bottom;
   background-repeat: no-repeat;
@@ -251,4 +244,8 @@ footer {
 }
 #section2-text {
   margin: auto auto;
+}
+
+nav {
+  flex-wrap: wrap !important;
 }

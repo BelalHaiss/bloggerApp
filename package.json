@@ -8,7 +8,7 @@
   },
   "devDependencies": {},
   "scripts": {
-    "runSass": "node-sass app.scss app.css -w"
+    "sass": "node-sass app.scss app.css -w"
   },
   "keywords": [],
   "author": "",
